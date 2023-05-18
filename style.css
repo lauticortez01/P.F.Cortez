@@ -195,7 +195,7 @@ h2{
     font-family: inherit;
     font-size:medium;
     text-align: center;
-    word-spacing: 1rem;
+    margin:5px;
 }
 .mepa{
     color: black;
@@ -203,18 +203,19 @@ h2{
     font-size: 1rem;
     text-align: left;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin-bottom: 30px;
     margin-left: 10px;
-    width: 100%;
     height: min-content;
+    gap:5px
 }
+
 @media(min-width: 768px){
     .mepa{color: black;
         font-family: inherit;
         font-size: 1rem;
+        flex-direction: row;
         text-align: left;
-        word-spacing: 1rem;
         display: flex;
         flex-direction: row;
         margin-bottom: 30px;

@@ -152,6 +152,95 @@ h2{
     margin-bottom: 30px;
 }
 
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .testimonios {
+        display: flex;
+        flex-direction: row;
+}
+}
+.testimonios__header{
+margin: 50px 0px;
+padding: 10px 20px;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.testimonios__header h1{
+    font-size: 2.9rem;
+    font-weight: 500;
+    padding: 20px 10px;
+}
+.testimonios_contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap ¡important;
+    width: 100%;
+}
+
+.testimonios__caja{
+    width: 300px;
+    box-shadow: 2px 2px 30px rgba ( 0, 0, 0, 0.1);
+    background-color: rgb(245, 195, 195);
+    padding: 20px;
+    margin: 15px;
+}
+@media (min-width:425px) {
+    .testimonios__caja {
+        width: 400px}
+}
+.perfil-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 30px;
+}
+.perfil-img img{
+    width: 100%;
+    object-fit: center;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+}
+
+.name-user{
+    display: flex;
+    flex-direction: column;
+}
+
+.name.user strong{
+    color:#3d3d3d;
+    font-size: 1.3rem;
+
+}
+.name.user span{
+    color: #979797;
+    font-size: 1.1rem;
+}
+.caja-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.comentarios__clientes{
+    color:#4b4b44;
+}
+
 
 .foto1{
     height: 300px;
@@ -186,9 +275,10 @@ h2{
 }
 
 @media(min-width: 500px) {
-    .mapa {width: 65rem;
-    margin: 100px;
-    }
+    .mapa {
+        width: 65rem;
+        margin: 100px;
+        }
 }
 .quesomos{
     color: black;
@@ -277,7 +367,7 @@ form{
 
 
 body{
-    background-color: rgb(204, 194, 204);
+    background-color: rgb(230, 223, 222);
 }
 
 #containerluna{
@@ -286,14 +376,26 @@ grid-template-areas:
 "luna1 luna1 luna2 luna2"
 "luna3 luna4 luna4 luna5";
 gap: 5px;
-padding: 10px;
+margin:0 auto;
+margin-bottom: 20px;
+width: 80%;
 }
 
 .luna1, .luna2, .luna3, .luna4, .luna5 {
-    max-width: 100%;
+    width: 100%;
     background-size:cover;
     background-position:center;
-    height: 450px;
+    height: 170px;
+}
+@media(min-width:500px){
+    .luna1, .luna2, .luna3, .luna4, .luna5 {
+        height: 250px;
+    }
+}
+@media(min-width:768px){
+    .luna1, .luna2, .luna3, .luna4, .luna5 {
+        height: 350px;
+    }
 }
 .luna1{
     background-image: url(img/luna\ de\ alberdi.jpg);
@@ -325,19 +427,32 @@ padding: 10px;
 }
 
 .containermurales{
-    display: grid;
+    display:grid;
     grid-template-areas:
     "murales1 murales1 murales2 murales2"
     "murales3 murales4 murales4 murales5";
     gap: 5px;
-    padding: 10px;
+    margin:0 auto;
+    margin-bottom: 20px;
+    width: 80%;
 }
 
 .murales1, .murales2, .murales3,.murales4, .murales5{
     width: 100%;
-    height: 450px;
+    height: 170px;
     background-size: cover;
     background-position:center;
+}
+
+@media(min-width:500px){
+    .murales1, .murales2, .murales3,.murales4, .murales5{
+        height: 250px;
+    }
+}
+@media(min-width:768px){
+    .murales1, .murales2, .murales3,.murales4, .murales5{
+        height: 350px;
+    }
 }
 
 .murales1{
@@ -358,7 +473,7 @@ padding: 10px;
 .murales4{
     background-image: url(img/losmurales4.jpg);
     grid-area: murales4;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 .murales5{
@@ -372,14 +487,26 @@ padding: 10px;
     "estancia1 estancia1 estancia2 estancia2"
     "estancia3 estancia4 estancia4 estancia5";
     gap: 5px;
-    padding: 10px;
+    margin:0 auto;
+    margin-bottom: 20px;
+    width: 80%;
 }
 
 .estancia1, .estancia2, .estancia3, .estancia4, .estancia5{
     background-size:cover;
     background-position:center;
-    height: 450px;
+    height: 170px;
     width: 100%;
+}
+@media(min-width:500px){
+    .estancia1, .estancia2, .estancia3, .estancia4, .estancia5{
+        height: 250px;
+    }
+}
+@media(min-width:768px){
+    .estancia1, .estancia2, .estancia3, .estancia4, .estancia5{
+        height: 350px;
+    }
 }
 
 .estancia1{

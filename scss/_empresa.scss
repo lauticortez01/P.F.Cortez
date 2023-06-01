@@ -1,0 +1,58 @@
+.quesomos{
+    color: black;
+    font-family: inherit;
+    font-size:medium;
+    text-align: center;
+    margin:5px;
+}
+.mepa{
+    color: black;
+    font-family: inherit;
+    font-size: 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    height: min-content;
+    gap:5px
+}
+
+@media(min-width: 768px){
+    .mepa{color: black;
+        font-family: inherit;
+        font-size: 1rem;
+        flex-direction: row;
+        text-align: left;
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 30px;
+        margin-left: 10px;}
+}
+.papa{
+    margin-right: 10px;
+    text-align: left;
+    justify-content: space-around;
+    align-content: space-evenly;
+}
+@media(min-width:768px){
+    .papa {
+        margin-right: 50px;
+        text-align: left;
+    }
+    }
+
+
+.valores{
+    margin: 50px;
+    font-weight: 500;
+}
+
+
+.medio{
+    color: black;
+    font-family: inherit;
+    font-size:medium;
+    text-align: left;
+    display: block;
+}

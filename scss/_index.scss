@@ -1,0 +1,51 @@
+
+.main__li--a{
+    color: white;
+    &:hover{
+    font-size: larger;
+    text-decoration: underline 2px;
+    &:active{
+        text-decoration: underline 4px;
+    }
+}
+}
+.prin {
+    color: black;
+    list-style-type: square;
+    font-family: inherit;
+    font-size:medium;
+    text-align:center;
+    text-transform:capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+    .item {
+    font-family: inherit;
+    font-size: larger;
+    text-align: left;
+    display: list-item;
+    list-style: square;}
+}
+.containerpadre-cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+    margin:50px auto;
+}
+    @media(min-width:768px){
+        .containerpadre-cards {
+            flex-direction: row;
+            justify-content: space-around;
+            align-content: start;
+            margin:50px auto;
+        }
+    }
+.card{
+    background-color: $color-card;
+}

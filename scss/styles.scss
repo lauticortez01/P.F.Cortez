@@ -1,0 +1,110 @@
+@import "variables";
+@import"index";
+@import "propiedades";
+@import"experiencias";
+@import"empresa";
+@import"contacto";
+
+header{
+    background-color: $color-secundario;
+}
+ul{
+    color: rgb(0, 0, 0);
+    list-style-type: none;
+    font-family: inherit;
+    font-size:medium;
+    text-align:center;
+    text-transform:capitalize;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        font-size: large;
+    }
+}
+@media (min-width: 1024px){
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 50px;
+        font-size: x-large
+    }
+}
+
+.nav__enlaces{
+    text-decoration:none;
+    color: rgb(87, 0, 0);
+
+&:hover{
+    text-decoration:underline;
+}
+&:active{
+text-decoration: underline 4px;
+}
+}
+li{
+    display: inline;
+} 
+
+h1{
+    color:rgb(170, 44, 44);
+    font-size: 2rem;
+    font-family: inherit;
+    text-align: center;
+    margin: 12rem 3rem;
+    justify-content: center;
+    align-content: center;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        color:rgb(170, 44, 44);
+    font-size: 60px;
+    font-family:inherit;
+    text-align: center;
+    margin: 17rem 10rem;
+    padding: 5px;
+    }
+}
+
+
+footer{
+    
+    padding: 10px;
+    color: black;
+    width: 100%;
+    background-color: $color-terciario;
+}
+
+h4 {
+    font-family: inherit;
+    font-size: large;
+    text-decoration: none;
+    text-align: left;
+    margin: 1px;
+}
+
+.redes{
+    font-size: larger;
+    font-family: inherit;
+}
+
+h2{
+    color: rgb(84, 114, 247);
+    font-family: inherit;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+body{
+    background-color: $color-principal;
+}

@@ -1,0 +1,35 @@
+#main--tittle{
+    color: rgb(131, 42, 57);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.item2{
+    font-family: inherit;
+    font-size: large;
+    list-style: square;
+    display: flex;
+    flex-direction: column;
+}
+.main__li--b{
+    color: blue;
+    &:hover{
+    font-size: larger;
+    text-decoration: underline 2px;
+    &:active{
+        text-decoration: underline 4px;
+    }
+}
+}
+.mapa{
+    width: 16rem;
+    margin: 50px;
+}
+
+@media(min-width: 500px) {
+    .mapa {
+        width: 65rem;
+        margin: 100px;
+        }
+    }
